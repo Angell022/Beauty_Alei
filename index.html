@@ -14,11 +14,9 @@
 
   <body>
     <!--===== HEADER =====-->
-    <header class="l-header">
-      <nav class="nav bd-grid">
-        <div>
-          <a href="#" class="nav__logo">Beauty Aleí</a>
-        </div>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Beauty Aleí</a>
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
@@ -44,6 +42,10 @@
               <a href="#contact" class="nav__link">Contact</a>
             </li>
           </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
         </div>
 
         <div class="nav__toggle" id="nav-toggle">
@@ -52,11 +54,11 @@
       </nav>
     </header>
 
-    <main class="l-main">
+    <main class="main">
       <!--===== HOME =====-->
       <section class="home" id="home">
-        <div class="home__container bd-grid">
-          <h1 class="home__title"><span>Beauty</span><br />Aleí</h1>
+        <div class="home__container container grid">
+          <h1 class="home__title">Beauty<br /><b>Aleí</b></h1>
 
           <div class="home__scroll">
             <a href="#about" class="home__scroll-link"
@@ -64,22 +66,20 @@
             >
           </div>
 
-          <img src="imgs/fashionn.png" alt="fot" class="home__img" />
+          <!--<img src="imgs/fashionn.png" alt="foshion" class="home__img" />-->
         </div>
       </section>
 
       <!--===== ABOUT =====-->
-      <section class="about section" id="about">
-        <h2 class="section-title">About</h2>
+      <section class="about section container" id="about">
+        <h2 class="section__title-center about__title">About</h2>
 
-        <div class="section-container bd-grid">
-          <div class="section-img">
-            <img src="imgs/spen.png" alt="about" />
-          </div>
+        <div class="about__container grid">
+          <img src="imgs/spen.png" alt="about" class="about__img" />
 
-          <div>
-            <h2 class="section-subtitle">Beauty Aleí</h2>
-            <p class="section-text">
+          <div class="about__data">
+            <h2 class="about__subtitle">Beauty Aleí</h2>
+            <p class="about__description">
               Nace de querer ofrecer un servicio premium a un precio
               competitivo.<br />
               Somos un equipo joven, consolidado, que disfruta cuidando los
@@ -104,38 +104,34 @@
       </section>
 
       <!--===== NAIL =====-->
-      <section class="nail section" id="nail">
-        <h2 class="section-title"></h2>
+      <section class="nail section container" id="nail">
+        <h2 class="section__title-center about__title">Nail Art</h2>
 
-        <div class="section-container bd-grid">
-          <div>
-            <h2 class="section-subtitle">Nail Art</h2>
-            <p class="section-text">
+        <div class="about__container grid">
+          <img src="imgs/nail1.jpg" alt="nail" class="about__img1" />
+
+          <div class="about__data">
+            <h2 class="about__subtitle"></h2>
+            <p class="about__description">
               Tu sitio de referencia en el mundo de las uñas.<br />
               Por que unas uñas elegantes comunican más de lo que crees.<br />
               Donde encontrarás todos tus productos favoritos y disfrutarás de
               contenido especializado.
             </p>
           </div>
-
-          <div class="section-img">
-            <img src="imgs/nail1.jpg" alt="nail" />
-          </div>
         </div>
       </section>
 
       <!--===== LASH =====-->
-      <section class="lash section" id="lash">
-        <h2 class="section-title"></h2>
+      <section class="lash section container" id="lash">
+        <h2 class="section__title-center about__title">Lash Art</h2>
 
-        <div class="section-container bd-grid">
-          <div class="section-img">
-            <img src="imgs/lash2.jpg" alt="lash" />
-          </div>
+        <div class="about__container grid">
+          <img src="imgs/lash2.jpg" alt="lash" class="about__img1" />
 
-          <div>
-            <h2 class="section-subtitle">Lash Art</h2>
-            <p class="section-text">
+          <div class="about__data">
+            <h2 class="about__subtitle"></h2>
+            <p class="about__description">
               Si tienes la piel sensible pero quieres unas cejas y pestañas bien
               cuidadas y definidas.<br />
               Una técnica natural y nada agresiva de dar forma.<br />
@@ -147,13 +143,15 @@
       </section>
 
       <!--===== HAIR =====-->
-      <section class="hair section" id="hair">
-        <h2 class="section-title"></h2>
+      <section class="hair section container" id="hair">
+        <h2 class="section__title-center about__title">Hair Art</h2>
 
-        <div class="section-container bd-grid">
-          <div>
-            <h2 class="section-subtitle">Hair Art</h2>
-            <p class="section-text">
+        <div class="about__container grid">
+          <img src="imgs/hair1.jpg" alt="lash" class="about__img1" />
+
+          <div class="about__data">
+            <h2 class="about__subtitle"></h2>
+            <p class="about__description">
               Obtén el color que siempre has querido.<br />
               Danos la oportunidad de sorprenderte con las mejores
               coloristas.<br />
@@ -161,18 +159,14 @@
               Aportando nutrición ,un brillo sorprendente y altamente duradero.
             </p>
           </div>
-
-          <div class="section-img">
-            <img src="imgs/hair1.jpg" alt="hair" />
-          </div>
         </div>
       </section>
 
       <!--===== PORTFOLIO =====-->
-      <section class="portfolio section" id="portfolio">
-        <h2 class="section-title">Galería</h2>
+      <section class="portfolio section container" id="portfolio">
+        <h2 class="section__title-center about__title">Galería</h2>
 
-        <div class="portfolio__container bd-grid">
+        <div class="portfolio__container grid">
           <div class="portfolio__img">
             <img src="imgs/nail1.jpg" alt="img1" />
           </div>
@@ -236,30 +230,28 @@
       </section>
 
       <!--===== CONTACT =====-->
-      <section class="contact section" id="contact">
-        <h2 class="section-title">Contact</h2>
+      <section class="contact section container" id="contact">
 
-        <div class="contact__container bd-grid">
+        <div class="contact__container grid">
+          <div class="contact__box">
+          <h2 class="section__title-center about__title">Contact</h2>
           <div class="contact__info">
             <h3 class="contact__subtitle">EMAIL</h3>
             <span class="contact__text">info.mail.com</span>
 
             <h3 class="contact__subtitle">PHONE</h3>
             <span class="contact__text">+20 999-999</span>
-
-            <h3 class="contact__subtitle">ADRESS</h3>
-            <span class="contact__text">My contry</span>
           </div>
 
           <form action="" class="contact__form">
             <div class="contact__inputs">
-              <input type="text" placeholder="Name" class="contact__input" />
-              <input type="mail" placeholder="E-mail" class="contact__input" />
+              <input type="text" placeholder="Asunto" class="contact__input" />
             </div>
 
             <textarea
               name=""
               id=""
+              placeholder="message"
               cols="0"
               rows="10"
               class="contact__input"
@@ -268,27 +260,30 @@
             <input type="submit" value="Enviar" class="contact__button" />
           </form>
         </div>
+      </div>
       </section>
     </main>
 
     <!--===== FOOTER =====-->
     <footer class="footer section">
-      <div class="footer__container bd-grid">
-        <div class="footer__data">
+      <div class="footer__container container grid">
+        <div class="footer__content">
           <h2 class="footer__title">Beauty Aleí</h2>
-          <p class="footer__text">Alejandra Palacios</p>
+          <span class="footer__text">Alejandra Palacios</span>
         </div>
 
-        <div class="footer__data">
-          <h2 class="footer__title">FOLLOW</h2>
+        <div class="footer__content">
+          <h2 class="footer__subtitle">FOLLOW</h2>
+          <div class="footer__content1">
           <a href="#" class="footer__social"><i class="bx bxl-facebook"></i></a>
           <a href="#" class="footer__social"
             ><i class="bx bxl-instagram"></i
           ></a>
           <a href="#" class="footer__social"><i class="bx bxl-twitter"></i></a>
         </div>
+        </div>
       </div>
-      <p class="footer__copy">&#169; 2020 JASS. All right reserved</p>
+      <p class="footer__copy">&#169; 2022 JASS. All right reserved</p>
     </footer>
 
     <!--===== SCROLL REVEAL =====-->
