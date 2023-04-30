@@ -243,6 +243,7 @@ img {
   margin-bottom: var(--mb-1);
 }
 .home__scroll {
+  align-self: flex-end;
   margin-top: var(--mb-3);
 }
 .home__scroll-link {
