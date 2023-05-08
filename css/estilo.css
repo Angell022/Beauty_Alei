@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@500&display=swap");
 :root {
   --header-height: 3.5rem;
   --font-medium: 500;
@@ -33,6 +34,7 @@
 
   /*===== z index =====*/
   --z-fixed: 100;
+  --z-tooltip: 10;
 }
 
 /* * ============================== */
@@ -40,8 +42,8 @@
 /* * ============================== */
 @media screen and (max-width: 968px) {
   :root {
-    --big-font-size: 4.5rem;
-    --h1-font-size: 2.25rem;
+    --big-font-size: 5.75rem;
+    --h1-font-size: 3.25rem;
     --h2-font-size: 2rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
@@ -239,7 +241,7 @@ img {
 .home__title {
   line-height: 140%;
   font-size: var(--big-font-size);
-  color: var(--first-color-lighter);
+  color: var(--body-color);
   margin-bottom: var(--mb-1);
 }
 .home__scroll {
@@ -252,7 +254,7 @@ img {
   color: var(--body-color);
 }
 .home__img {
-  margin-top: var(--mb-2);
+  margin-top: var(--mb-4);
 }
 
 /* ===== ABOUT =====*/
@@ -310,7 +312,7 @@ img {
   cursor: pointer;
 }
 .portfolio__img img:hover {
-  transform: scale(-0.5);
+  transform: scale(1.1);
 }
 
 /* ===== CONTACT =====*/
@@ -367,7 +369,7 @@ img {
   color: var(--white-color);
   margin-bottom: var(--mb-2);
 }
-.footer__subtitle{
+.footer__subtitle {
   text-align: center;
 }
 .footer__link {
@@ -399,16 +401,16 @@ img {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }
-  .home__img {
-    width: 150px;
-  }
+  /*.home__img {
+    width: 350px;
+  }*/
 }
 
 @media screen and (min-width: 576px) {
-  .home__social-link:hover {
-    transform: translateX(-0.5rem);
-  }
-  .portfolio__container{
+  /*.home__social:hover {
+    transform: translateX(-1.5rem);
+  }*/
+  .portfolio__container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -443,9 +445,9 @@ img {
   .home__container {
     height: 100vh;
   }
-  .home__img {
-    width: 480px;
-  }
+  /*.home__img {
+    width: 780px;
+  }*/
 }
 
 /* For large devices */
@@ -470,7 +472,7 @@ img {
   .about__img {
     width: 250px;
   }
-  .portfolio__container{
+  .portfolio__container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
